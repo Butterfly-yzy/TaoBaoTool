@@ -115,6 +115,6 @@ class InjectView(val activity: Activity) {
      * 开始秒杀购物
      */
     private fun startGo() {
-        Core.startGo(activity, activity.intent.clone() as Intent)
+        Core.startGo(activity.applicationContext, activity.intent.clone() as Intent)
     }
 }
