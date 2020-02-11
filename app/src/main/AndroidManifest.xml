@@ -9,27 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
 
-        <meta-data
-            android:name="xposeddescription"
-            android:value="淘宝秒杀插件" />
-        <!-- 最低版本号 -->
-        <meta-data
-            android:name="xposedminversion"
-            android:value="46" />
-        <meta-data
-            android:name="design_width_in_dp"
-            android:value="360" />
-        <meta-data
-            android:name="design_height_in_dp"
-            android:value="640" />
-    </application>
+    <meta-data
+        android:name="xposedmodule"
+        android:value="true" />
+    <!-- 模块描述 -->
+    <meta-data
+        android:name="xposeddescription"
+        android:value="淘宝秒杀助手" />
+    <!-- 最低版本号 -->
+    <meta-data
+        android:name="xposedminversion"
+        android:value="30" />
 
-</manifest>
+</application>
+
+    </manifest>
