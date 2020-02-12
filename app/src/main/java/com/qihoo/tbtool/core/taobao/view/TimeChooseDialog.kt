@@ -35,7 +35,8 @@ data class ChooseTime(var timeType: String, var hour: Int, var minutes: Int, var
             c.set(Calendar.HOUR_OF_DAY, hour)
         } else {
             if (hour == 12) {
-                // 12点就是0点
+                // 12点就是 第二天 0 点
+                c.add(Calendar.DATE, 1);
                 c.set(Calendar.HOUR_OF_DAY, 0)
             } else {
                 c.set(Calendar.HOUR_OF_DAY, hour + 12)
@@ -135,7 +136,7 @@ class TimeChooseDialog(
 
 
 
-                    textView("设置定时时间") {
+                    textView("设置定时秒杀时间") {
                         gravity = Gravity.CENTER
                         textColor = Color.parseColor("#FF333333")
                         textSize = 16f
@@ -248,7 +249,7 @@ class TimeChooseDialog(
 
 
     private fun confirm() {
-        default.timeType= wvDayType.selectionItem
+        default.timeType = wvDayType.selectionItem
         default.hour = wvHour.selectionItem.toInt()
         default.minutes = wvMinutes.selectionItem.toInt()
         default.second = wvSecond.selectionItem.toInt()
