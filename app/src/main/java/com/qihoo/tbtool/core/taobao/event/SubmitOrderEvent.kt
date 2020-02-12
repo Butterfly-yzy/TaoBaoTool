@@ -32,7 +32,7 @@ object SubmitOrderEvent : BaseEvent() {
         val submitBtn = getSubmitBtn(activity) ?: return@launch
 
         l("找到提交按钮:$submitBtn  ${submitBtn.text}")
-//        submitBtn.performClick()
+        submitBtn.performClick()
     }
 
 
