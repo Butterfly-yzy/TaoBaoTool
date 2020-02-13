@@ -1,7 +1,7 @@
 # 软件故事背景
 我是个程序员，我有一个梦想！  
 
-![](https://i04piccdn.sogoucdn.com/8b682d508954cba0)
+![](http://p0.qhimg.com/t016c1ef30904f4c383.gif)
 
 没错我有一个车厘子自由的梦想，但是看到淘宝车厘子的价格。  
 
