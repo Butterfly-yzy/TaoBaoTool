@@ -107,12 +107,6 @@ class InjectView(val activity: Activity) {
                     setMargins(0, dip(15), 0, 0)
                     gravity = Gravity.CENTER
                 }
-
-                imageView {
-                    imageBitmap = logo
-                }.lparams(dip(70), dip(70)) {
-                    setMargins(0, dip(15), 0, 0)
-                }
             }
 
         }.view
